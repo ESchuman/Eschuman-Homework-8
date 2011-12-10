@@ -12,9 +12,9 @@ ma: ma.o libcma.so
 	gcc ma.o -o ma -L. -lcma
 testy.o: testy.c
 	gcc -c testy.c -o testy.o
-ma.o: ma.c
+ma.o: ma.c debug.h
 	gcc -c ma.c -o ma.o
-cma.o: cma.c cma.h
+cma.o: cma.c cma.h debug.h
 	gcc -c cma.c -o cma.o
 libcma.so: cma.o
 	gcc -shared -o libcma.so cma.o

@@ -1,1 +1,5 @@
 README for ESchuman HW8
+Makefile___
+clean: clean out non-source files
+all: default argument, makes all and exec's ma and testy
+test: creates exec's ma and testy and runs a predefined test

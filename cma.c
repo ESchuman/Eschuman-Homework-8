@@ -8,6 +8,7 @@
 
 #define ITEMNOTFOUND ((void *)-1)
 
+//
 static void *class_membase=NULL;
 static void *class_limit=NULL;
 static MNode class_inuse=NULL;

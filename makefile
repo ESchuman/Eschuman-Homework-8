@@ -4,8 +4,6 @@ test: ma testy
 	./testy 18000
 dist: cma.c ma.c testy.c
 	tar -cf EScma.tar cma.c ma.c testy.c cma.h makefile
-#cma: cma.o
-#	gcc cma.o -o cma
 testy: testy.o libcma.so
 	gcc testy.o -o testy -L. -lcma
 ma: ma.o libcma.so

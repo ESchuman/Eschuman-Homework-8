@@ -1,7 +1,7 @@
 #ifndef _DEBUG_H_
 #define _DEBUG_H_
 
-
+//
 #ifdef DODEBUG
 
 #define DEBUG(fmt,a...) printf("D:%s:%d> " fmt "\n",__FILE__,__LINE__,##a)
